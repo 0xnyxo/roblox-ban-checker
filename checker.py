@@ -29,7 +29,7 @@ class V:
             data = json.loads(text)
             rows = []
 
-            if "delete" in text.lower() and text.upper():
+            if "delete" in text.lower() or text.upper():
                 rows.append(["[WRN] Warning", "Next Ban is a Termination\n"])
             else:
                 rows.append(["[INF] Status", "Next ban is not termination-related\n"])
